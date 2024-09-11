@@ -56,12 +56,12 @@ getId('View_project').addEventListener('click', () => {
 });
 
 const img_article = [
-    '../Arch Aladin/Alaa/pub/1.png',
-    '../Arch Aladin/Alaa/pub/2.png',
-    '../Arch Aladin/Alaa/pub/3.png',
-    '../Arch Aladin/Alaa/pub/4.png',
-    '../Arch Aladin/Alaa/pub/5.png',
-    '../Arch Aladin/Alaa/pub/6.png',
+    '1.png',
+    '2.png',
+    '3.png',
+    '4.png',
+    '5.png',
+    '6.png',
 ];
 let index_img_article = 0;
 setInterval(() => {
@@ -71,11 +71,11 @@ setInterval(() => {
 
 let index_img_container1 = 0;
 const img_container1 = [
-    '../Arch Aladin/Alaa/pub/1.png',
-    '../Arch Aladin/Alaa/pub/2.png',
-    '../Arch Aladin/Alaa/pub/3.png',
-    '../Arch Aladin/Alaa/pub/4.png',
-    '../Arch Aladin/Alaa/pub/5.png',
+    '1.png',
+    '2.png',
+    '3.png',
+    '4.png',
+    '5.png',
 ];
 setInterval(() => {
     index_img_container1 = (index_img_container1 + 1) % img_container1.length;
@@ -84,11 +84,11 @@ setInterval(() => {
 
 let index_img_container2 = 0;
 const img_container2 = [
-    '../Arch Aladin/Alaa/pub/6.png',
-    '../Arch Aladin/Alaa/pub/7.png',
-    '../Arch Aladin/Alaa/pub/8.png',
-    '../Arch Aladin/Alaa/pub/9.png',
-    '../Arch Aladin/Alaa/pub/10.png',
+    '6.png',
+    '7.png',
+    '8.png',
+    '9.png',
+    '10.png',
 ];
 setInterval(() => {
     index_img_container2 = (index_img_container2 + 1) % img_container2.length;
@@ -97,11 +97,11 @@ setInterval(() => {
 
 let index_img_container3 = 0;
 const img_container3 = [
-    '../Arch Aladin/Alaa/pub/11.png',
-    '../Arch Aladin/Alaa/pub/12.png',
-    '../Arch Aladin/Alaa/pub/13.png',
-    '../Arch Aladin/Alaa/pub/14.png',
-    '../Arch Aladin/Alaa/pub/15.png',
+    '11.png',
+    '12.png',
+    '13.png',
+    '14.png',
+    '15.png',
 ];
 setInterval(() => {
     index_img_container3 = (index_img_container3 + 1) % img_container3.length;
@@ -110,11 +110,11 @@ setInterval(() => {
 
 let index_img_container4 = 0;
 const img_container4 = [
-    '../Arch Aladin/Alaa/pub/16.png',
-    '../Arch Aladin/Alaa/pub/17.png',
-    '../Arch Aladin/Alaa/pub/18.png',
-    '../Arch Aladin/Alaa/pub/19.png',
-    '../Arch Aladin/Alaa/pub/20.png',
+    '16.png',
+    '17.png',
+    '18.png',
+    '19.png',
+    '20.png',
 ];
 setInterval(() => {
     index_img_container4 = (index_img_container4 + 1) % img_container4.length;
@@ -123,11 +123,11 @@ setInterval(() => {
 
 let index_img_container5 = 0;
 const img_container5 = [
-    '../Arch Aladin/Alaa/pub/21.png',
-    '../Arch Aladin/Alaa/pub/22.png',
-    '../Arch Aladin/Alaa/pub/23.png',
-    '../Arch Aladin/Alaa/pub/24.png',
-    '../Arch Aladin/Alaa/pub/25.png',
+    '21.png',
+    '22.png',
+    '23.png',
+    '24.png',
+    '25.png',
 ];
 setInterval(() => {
     index_img_container5 = (index_img_container5 + 1) % img_container5.length;
@@ -136,9 +136,9 @@ setInterval(() => {
 
 let index_img_container6 = 0;
 const img_container6 = [
-    '../Arch Aladin/Alaa/pub/26.png',
-    '../Arch Aladin/Alaa/pub/27.png',
-    '../Arch Aladin/Alaa/pub/28.png',
+    '26.png',
+    '27.png',
+    '28.png',
 ];
 setInterval(() => {
     index_img_container6 = (index_img_container6 + 1) % img_container6.length;
