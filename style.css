@@ -259,9 +259,6 @@ main div img:hover {
     display: flex;
     transition: .4s;
 }
-.content_about_project .galerie div:hover{
-    box-shadow: 1px 1px 10px 1px white;
-}
 .content_about_project .galerie div img{
     width: 70%;
     height: 24vh;
