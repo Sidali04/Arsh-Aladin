@@ -43,7 +43,7 @@ getId('return_menu').addEventListener('click', () => {
     nav.style.display = 'block';
     article.style.display = 'block';
     aside.style.display = 'none';
-    main.style.display = 'block';
+    main.style.display = 'none';
     footer.style.display = 'block';
 });
 
