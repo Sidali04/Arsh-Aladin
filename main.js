@@ -29,6 +29,7 @@ let nav = document.querySelector('nav');
 let article = document.querySelector('article');
 let aside = document.querySelector('aside');
 let main = document.querySelector('main');
+let content_about_project = getId('content_about_project');
 let footer = document.querySelector('footer');
 
 getId('About_me').addEventListener('click', () => {
@@ -36,23 +37,24 @@ getId('About_me').addEventListener('click', () => {
     article.style.display = 'none';
     aside.style.display = 'block';
     main.style.display = 'none';
+    content_about_project.style.display = 'none';
     footer.style.display = 'none';
 });
-
-getId('return_menu').addEventListener('click', () => {
-    nav.style.display = 'block';
-    article.style.display = 'block';
-    aside.style.display = 'none';
-    main.style.display = 'none';
-    footer.style.display = 'block';
-});
-
 getId('View_project').addEventListener('click', () => {
     nav.style.display = 'none';
     article.style.display = 'none';
     aside.style.display = 'none';
     main.style.display = 'block';
+    content_about_project.style.display = 'none';
     footer.style.display = 'none';
+});
+getId('return_menu').addEventListener('click', () => {
+    nav.style.display = 'block';
+    article.style.display = 'block';
+    aside.style.display = 'none';
+    main.style.display = 'none';
+    content_about_project.style.display = 'block';
+    footer.style.display = 'block';
 });
 
 const img_article = [
