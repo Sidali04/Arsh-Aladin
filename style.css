@@ -132,12 +132,13 @@ aside{
     position: sticky;
     top: 150px;
     display: none;
+    overflow-x:hidden;
 }
 aside #Alaa_is_photo{
-    width: 35%;
-    height: 25vh;
+    width: 40%;
+    height: 22vh;
     position: absolute;
-    top: 15px;
+    top: 30px;
     left: 5%;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 1px #676666;
@@ -149,19 +150,18 @@ aside #Full_name{
     top: 65px;
     left: 28%;
     color: black;
-        scale:1.2 1;
 }
 aside #discription{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: -10%;
     color: black;
 }
 aside #return_menu{
     position: absolute;
-    bottom: 3vh;
+    bottom: 10vh;
     left: 50%;
     width: 30%;
     height: 6vh;
