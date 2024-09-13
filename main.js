@@ -1,148 +1,74 @@
-let getId = (id) => {
+let getId = (id)=>{
     return document.getElementById(id);
-};
-getId('ul_header').style.transition = '.6s';
-let hide_show_ul_header = true;
-getId('list').addEventListener('click', () => {
-    if (hide_show_ul_header) {
-        getId('ul_header').style.width = '60%';
-        getId('btn1_ul_header').style.transition = '1.5s';
-        getId('btn2_ul_header').style.transition = '1.5s';
-        getId('btn3_ul_header').style.transition = '1.5s';
-        getId('btn1_ul_header').style.display = 'block';
-        getId('btn2_ul_header').style.display = 'block';
-        getId('btn3_ul_header').style.display = 'block';
-        hide_show_ul_header = false;
-    } else {
-        getId('ul_header').style.width = '0%';
-        getId('btn1_ul_header').style.transition = '1.5s';
-        getId('btn2_ul_header').style.transition = '.5s';
-        getId('btn3_ul_header').style.transition = '.5s';
-        getId('btn1_ul_header').style.display = 'none';
-        getId('btn2_ul_header').style.display = 'none';
-        getId('btn3_ul_header').style.display = 'none';
-        hide_show_ul_header = true;
+}
+let hide_show_nav = true;
+document.querySelector('nav').style.transition = '.4vh';
+getId('btn_list').addEventListener('click',()=>{
+    if (hide_show_nav) {
+        document.querySelector('nav').style.height = '54vh'; 
+        hide_show_nav = false;
+    }else{
+        document.querySelector('nav').style.height = '0vh';
+        hide_show_nav = true;
     }
 });
-
-let nav = document.querySelector('nav');
-let article = document.querySelector('article');
-let aside = document.querySelector('aside');
-let main = document.querySelector('main');
-let content_about_project = getId('content_about_project');
-let footer = document.querySelector('footer');
-
-getId('About_me').addEventListener('click', () => {
-    nav.style.display = 'none';
-    article.style.display = 'none';
-    aside.style.display = 'block';
-    main.style.display = 'none';
-    content_about_project.style.display = 'none';
-    footer.style.display = 'none';
+let change_main_img = true;
+setInterval(()=>{
+    if (change_main_img) {
+        getId('main_img').style.backgroundImage = 'url(main_img2.jpg)';
+        change_main_img = false;
+    }else{
+        getId('main_img').style.backgroundImage = 'url(main_img1.jpg)';
+        change_main_img = true;
+    }
+},5000);
+getId('WE_CREATE_NEW').addEventListener('click',()=>{
+    getId('add_paragraph_to_pre').innerHTML = 
+    `New We don’t draw designs and sketches.
+    we create buildings with a soul inspired
+    by the details of your lifestyle and day
+    to day habits. In Hatch Architect we 
+    bring your dreams and vision into life.
+    Every project gets through many stages
+    of profiling and understanding it’s function
+    before we ever lay down a single line 
+    toward your destination
+    `;
 });
-getId('View_project').addEventListener('click', () => {
-    nav.style.display = 'none';
-    article.style.display = 'none';
-    aside.style.display = 'none';
-    main.style.display = 'block';
-    content_about_project.style.display = 'none';
-    footer.style.display = 'none';
+getId('WE_ELEVATE_NEW').addEventListener('click',()=>{
+    getId('add_paragraph_to_pre').innerHTML = 
+    `Two We shape our space then our space shapes us.
+    In hatch interior we don’t believe in compromise
+    when it comes to your personal space... we aim for
+    the stars and shoot higher. With a set of talented
+    designers, we tailor your space taking into consideration
+    every detail of your life to create a perfect fit.
+    `;
 });
-getId('return_menu').addEventListener('click', () => {
-    nav.style.display = 'block';
-    article.style.display = 'block';
-    aside.style.display = 'none';
-    main.style.display = 'none';
-    content_about_project.style.display = 'block';
-    footer.style.display = 'block';
+getId('WE_INSPIRE').addEventListener('click',()=>{
+    getId('add_paragraph_to_pre').innerHTML = 
+    `Hatch Products came into existence to 
+    fill in the gap in the Saudi market to 
+    join the global league. We believe in 
+    the material truth and functional convenience.
+    From an interior architecture perspective, 
+    we create unique pieces with high attention 
+    to details and user experience to accommodate 
+    to your lifestyle.
+    `;
 });
-
-const img_article = [
-    '1.png',
-    '2.png',
-    '3.png',
-    '4.png',
-    '5.png',
-    '6.png',
-];
-let index_img_article = 0;
-setInterval(() => {
-    index_img_article = (index_img_article + 1) % img_article.length;
-    getId('home_img').src = img_article[index_img_article];
-}, 5000);
-
-let index_img_container1 = 0;
-const img_container1 = [
-    '1.png',
-    '2.png',
-    '3.png',
-    '4.png',
-    '5.png',
-];
-setInterval(() => {
-    index_img_container1 = (index_img_container1 + 1) % img_container1.length;
-    getId('img_container1').src = img_container1[index_img_container1];
-}, 3000);
-
-let index_img_container2 = 0;
-const img_container2 = [
-    '6.png',
-    '7.png',
-    '8.png',
-    '9.png',
-    '10.png',
-];
-setInterval(() => {
-    index_img_container2 = (index_img_container2 + 1) % img_container2.length;
-    getId('img_container2').src = img_container2[index_img_container2];
-}, 3000);
-
-let index_img_container3 = 0;
-const img_container3 = [
-    '11.png',
-    '12.png',
-    '13.png',
-    '14.png',
-    '15.png',
-];
-setInterval(() => {
-    index_img_container3 = (index_img_container3 + 1) % img_container3.length;
-    getId('img_container3').src = img_container3[index_img_container3];
-}, 3000);
-
-let index_img_container4 = 0;
-const img_container4 = [
-    '16.png',
-    '17.png',
-    '18.png',
-    '19.png',
-    '20.png',
-];
-setInterval(() => {
-    index_img_container4 = (index_img_container4 + 1) % img_container4.length;
-    getId('img_container4').src = img_container4[index_img_container4];
-}, 3000);
-
-let index_img_container5 = 0;
-const img_container5 = [
-    '21.png',
-    '22.png',
-    '23.png',
-    '24.png',
-    '25.png',
-];
-setInterval(() => {
-    index_img_container5 = (index_img_container5 + 1) % img_container5.length;
-    getId('img_container5').src = img_container5[index_img_container5];
-}, 3000);
-
-let index_img_container6 = 0;
-const img_container6 = [
-    '26.png',
-    '27.png',
-    '28.png',
-];
-setInterval(() => {
-    index_img_container6 = (index_img_container6 + 1) % img_container6.length;
-    getId('img_container6').src = img_container6[index_img_container6];
-}, 3000);
+getId('WE_DELIVER').addEventListener('click',()=>{
+    getId('add_paragraph_to_pre').innerHTML = 
+    `Owning a Hatch stamped Item is a status symbol,
+    a mark of recognition and quality. Hatch selections 
+    offers you the confidence, comprehensive support, 
+    and complete peace of mind that only an expert can 
+    provide. Hatch Selections products are reserved 
+    exclusively for products that fulfills the highest 
+    standards. Moreover, all these items have to pass 
+    our rigorous checks. they have been thoroughly and 
+    expertly examined. You can be certain that if a product 
+    qualifies for Hatch Selection, it meets the most uncompromising 
+    standards for your pleasure.
+    `;
+});
