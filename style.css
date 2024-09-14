@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*justify header div*/
 header{
     width: 100%;
     height: 12vh;
-    background-color: black;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     position: fixed;
     z-index: 3;
 }
+/*justify logo img in header div*/
 header img{
     width: 50px;
     height: 50px;
@@ -17,7 +20,9 @@ header img{
     top: 10px;
     left: 10px;
     border: 3px solid white;
+    cursor: pointer;
 }
+/*justify icon button list*/
 header #btn_list{
     position: absolute;
     top: 20px;
@@ -26,6 +31,7 @@ header #btn_list{
     font-size: 30px;
     cursor: pointer;
 }
+/*justify nav div*/
 nav{
     width: 93%;
     height: 0vh;
@@ -37,6 +43,7 @@ nav{
     overflow-y: hidden;
     z-index: 3;
 }
+/*justify options button in nav div*/
 nav button{
     cursor: pointer;
     width: 100%;
@@ -48,13 +55,13 @@ nav button{
     padding-left: 10px;
     color: white;
 }
+/*justify the home or the main div*/
 .home{
     width: 100%;
-    height: 350vh;
-    position: absolute;
-    top: 12vh;
+    height: 360vh;
     background-color: black;
 }
+/*justify the main div in the home div*/
 .home .div_main_img{
     width: 100%;
     height: 90vh;
@@ -64,6 +71,7 @@ nav button{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*justify*/
 .home .div_logo_img{
     width: 100%;
     height: 40vh;
@@ -97,14 +105,14 @@ nav button{
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
 }
-.home .btn_mission{
+.home .mission .btn_mission{
     width: 40%;
     height: 30vh;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
-.home button{
+.home .mission .btn_mission button{
     cursor: pointer;
     width: 100%;
     height: 5vh;
@@ -116,10 +124,10 @@ nav button{
     color: white;
     transition: .4s;
 }
-.home button:focus{
+.home .mission .btn_mission button:focus{
     border-color: wite;
 }
-.home button:hover{
+.home .mission .btn_mission button:hover{
     border-color: white;
 }
 .home #add_paragraph_to_pre{
@@ -146,7 +154,7 @@ nav button{
     height: 6vh;
     border-radius: 2px;
     border: none;
-    background-color: #f0f0f0;
+    background-color: wheat;
     box-shadow: 1px 1px 10px 1px #00000051;
     color: black;
     translate: 40% 500%;
@@ -183,30 +191,18 @@ nav button{
 .home .discription #SINCE_2019{
     font-weight: bolder;
 }
-.home footer{
-    width: 100%;
-    height: 50vh;
-    background-color: black;
-    text-align: center;
-}
-.home footer img{
-    width: 150px;
-    height: 150px;
-}
-.home .icon_social_media{
-    width: 200px;
-    height: 10vh;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+#up{
+    cursor: pointer;
+    position: fixed;
+    right: 7%;
+    bottom: 0px;
+    background-color:black;
     color: white;
-}
-.home .icon_social_media i{
-    margin: 5px;
-}
-.home footer p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    font-size: 30px;
+    width: 30px;
+    scale: 1.1 1;
+    display: none;
+    border: none;
 }
 @keyframes add_border_logo_img_main {
     0%{border-color:black;}
@@ -214,4 +210,150 @@ nav button{
     50%{border-right-color: white;}
     75%{border-bottom-color: white;}
     100%{border-left-color: white;}
+}
+/*justify architecture div*/
+.architecture{
+    width: 100%;
+    height: 420vh;
+    background-color:black;
+    display: none;
+}
+.architecture .div_main_img_architecture{
+    width: 100%;
+    height: 100vh;
+    background-image: url(main_img_archetacture.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.architecture div ~ .project{
+    width: 95%;
+    height: 50vh;
+    margin: 5px;
+}
+.architecture .project img{
+    width: 100%;
+    height: 45vh;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.architecture h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.interior{
+    width: 100%;
+    height: 510vh;
+    background-color: black;
+    display: none;
+}
+.interior hr{
+    color: white;
+}
+.interior .div_main_img_interior{
+    width: 100%;
+    height: 120vh;
+    position:relative;
+    top:-20vh;
+    background-image: url(main_img_interior1.png);
+    background-position: center;
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+.interior .div_main_img_interior h2{
+    position: absolute;
+    top: 130vh;
+    left: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline;
+}
+.interior .project{
+    width: 97%;
+    height: 50vh;
+    background-color: black;
+    margin: 5px;
+    display: flex;
+    overflow-x: scroll;
+}
+.interior .project img{
+    width: 100%;
+    height: 47vh;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.interior .discription{
+    width: 100%;
+    height: 12vh;
+    background-color: black;
+}
+.interior .discription h3, .interior .discription p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.interior .discription p{
+    font-weight:100;
+}
+.product{
+    width: 100%;
+    height: 50vh;
+    background-color: peru;
+    display: none;
+}
+.team{
+    width: 100%;
+    height: 50vh;
+    background-color: yellow;
+    display: none;
+}
+.gallery{
+    width: 100%;
+    height: 50vh;
+    background-color: green;
+    display: none;
+}
+.contact{
+    width: 100%;
+    height: 50vh;
+    background-color: grey;
+    display: none;
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    text-align: center;
+}
+footer img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+}
+footer .icon_social_media{
+    width: 200px;
+    height: 10vh;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+footer .icon_social_media i{
+    margin: 5px;
+}
+footer .icon_social_media a{
+    color: white;
+    font-size: 22px;
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
