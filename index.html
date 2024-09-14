@@ -10,21 +10,22 @@
 </head>
 <body>
     <header>
-        <img src="Alaa_logo.png">
+        <img src="Alaa_logo.png" id="Alaa_logo">
         <i class="fa-solid fa-list" id="btn_list"></i>
     </header>
     <nav>
         <div class="options" id="options">
-            <button>HOME</button>
-            <button>ARCHITECTURE</button>
-            <button>INTERIOR</button>
-            <button>PRODUCTS</button>
-            <button>TEAM</button>
-            <button>GALLERY</button>
-            <button>CONTACT</button>
+            <button id="HOME_btn">HOME</button>
+            <button id="ARCHITECTURE_btn">ARCHITECTURE</button>
+            <button id="INTERIOR_btn">INTERIOR</button>
+            <button id="PRODUCTS_btn">PRODUCTS</button>
+            <button id="TEAM_btn">TEAM</button>
+            <button id="GALLERY_btn">GALLERY</button>
+            <button id="CONTACT_btn">CONTACT</button>
         </div>
     </nav>
-    <div class="home">
+    <!--Home div-->
+    <div class="home" id="home">
         <div class="div_main_img" id="main_img"></div>
         <div class="div_logo_img">
             <img src="Alaa_logo.png">
@@ -45,8 +46,8 @@
                 <button id="WE_DELIVER">WE DELIVER</button>
             </div>
         </div>
-            <p id="add_paragraph_to_pre">
-            </p>
+        <p id="add_paragraph_to_pre">
+        </p>
         <div class="read_more">
             <button>READ...</button>
         </div>
@@ -71,18 +72,126 @@
             <p>6</p>
             <p>years</p>
         </div>
-        <footer>
-            <img src="Alaa_logo.png">
-            <div class="icon_social_media">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <p>2024 | ALL RIGHT RESERVED</p>
-            <p>Powered by ZERARI Sidali</p>
-        </footer>
     </div>
+    <!--architecture div-->
+    <div class="architecture" id="architecture">
+        <div class="div_main_img_architecture"></div>
+        <div class="project1 project">
+            <h2>Exterior design 01</h2>
+            <img src="archetacture1.jpg">
+        </div>
+        <div class="project2 project">
+            <h2>Exterior design 02</h2>
+            <img src="archetacture2.jpg">
+        </div>
+        <div class="project3 project">
+            <h2>Exterior design 03</h2>
+            <img src="archetacture3.jpg">
+        </div>
+        <div class="project4 project">
+            <h2>Exterior design 04</h2>
+            <img src="archetacture4.jpg">
+        </div>
+        <div class="project5 project">
+            <h2>Exterior design 05</h2>
+            <img src="archetacture5.jpg">
+        </div>
+        <div class="project6 project">
+            <h2>Exterior design 06</h2>
+            <img src="archetacture6.jpg">
+        </div>
+    </div>
+    <!--interior div-->
+    <div class="interior" id="interior">
+        <div class="div_main_img_interior" id="div_main_img_interior">
+            <h2>Interior vue</h2>
+        </div>
+        <div class="project1 project">
+            <img src="9.png">
+            <img src="10.png">
+            <img src="11.png">
+            <img src="12.png">
+            <img src="13.png">
+            <img src="14.png">
+            <img src="15.png">
+            <img src="24.png">
+        </div>
+        <div class="discription">
+            <h3>Living room || choise 01</h3>
+            <p>Price : 20.000 DA</p>
+        </div>
+        <hr>
+        <div class="project2 project">
+            <img src="16.png">
+            <img src="17.png">
+            <img src="18.png">
+            <img src="19.png">
+        </div>
+        <div class="discription">
+            <h3>Living room || choise 02</h3>
+            <p>Price : 20.000 DA</p>
+        </div>
+        <hr>
+        <div class="project3 project">
+            <img src="20.png">
+            <img src="21.png">
+            <img src="22.png">
+        </div>
+        <div class="discription">
+            <h3>Bedroom</h3>
+            <p>Price : 20.000 DA</p>
+        </div>
+        <hr>
+        <div class="project4 project">
+            <img src="25.png">
+            <img src="26.png">
+            <img src="27.png">
+        </div>
+        <div class="discription">
+            <h3>Swimming pool</h3>
+            <p>Price : 20.000 DA</p>
+        </div>
+        <hr>
+        <div class="project5 project">
+            <img src="28.png">
+        </div>
+        <div class="discription">
+            <h3>Living room || choise 03</h3>
+            <p>Price : 20.000 DA</p>
+        </div>
+        <hr>
+        <div class="project6 project">
+            <img src="1.png">
+            <img src="2.png">
+            <img src="3.png">
+            <img src="4.png">
+        </div>
+        <div class="discription">
+            <h3>Sitting or dining room</h3>
+            <p>Price : 20.000 DA</p>
+        </div>
+        <hr>
+    </div>
+    <!--product div-->
+    <div class="product" id="product">product</div>
+    <!--team div-->
+    <div class="team" id="team">team</div>
+    <!--gallery div-->
+    <div class="gallery" id="gallery">gallery</div>
+    <!--contact div-->
+    <div class="contact" id="contact">contact</div>
+    <footer>
+        <img src="Alaa_logo.png">
+        <div class="icon_social_media">
+            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="https://www.behance.net/studioalladin"><i class="fa-solid fa-user"></i></a>
+            <a href="https://www.instagram.com/arch_aladdin_/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Architectureetpublicite/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+        </div>
+        <p>2024 | ALL RIGHT RESERVED</p>
+        <p>Powered by ZERARI Sidali</p>
+    </footer>
+    <button id="up"><i class="fa-solid fa-caret-up"></i></button>
 </body>
 </html>
